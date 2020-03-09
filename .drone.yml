@@ -2,8 +2,16 @@ workspace:
   base: /home/drone-demo
   path: .
 
-pipeline:
-  build:
-    commands:
-    - pwd
-    - ls
+kind: pipeline
+type: exec
+name: default
+
+steps:
+- name: build
+  commands:
+  - echo hello
+  - pwd
+
+trigger:
+  branch:
+  - master
