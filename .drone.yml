@@ -1,0 +1,9 @@
+workspace:
+  base: /home/drone-demo
+  path: .
+
+pipeline:
+  build:
+    commands:
+    - pwd
+    - ls
