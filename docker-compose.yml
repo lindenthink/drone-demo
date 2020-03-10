@@ -4,14 +4,13 @@ services:
     image: drone/drone
     ports:
     - 9001:80
-    - 443:443
     container_name: drone
     volumes:
     - /var/lib/drone:/data
     restart: always
     environment:
-    - DRONE_SERVER_HOST=47.104.243.84:9001
     - DRONE_GITHUB_CLIENT_ID=f0234bc02594f475d748
-    - DRONE_GITHUB_SECRET=deaaa580ede93ecb475dff702db1e9aae5ff650e
+    - DRONE_GITHUB_CLIENT_SECRET=deaaa580ede93ecb475dff702db1e9aae5ff650e
     - DRONE_RPC_SECRET=cf51230bedda724d772507cb7140596f
+    - DRONE_SERVER_HOST=47.104.243.84:9001
     - DRONE_SERVER_PROTO=http
