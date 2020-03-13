@@ -13,8 +13,8 @@ platform:
 steps:
 - name: build
   commands:
-  - echo hello
   - pwd
+  - ll
 
 trigger:
   branch:
