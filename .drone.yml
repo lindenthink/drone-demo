@@ -14,7 +14,7 @@ steps:
 - name: build
   commands:
   - pwd
-  - ll
+  - ls -la
 
 trigger:
   branch:
